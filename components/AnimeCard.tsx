@@ -12,17 +12,17 @@ export interface AnimeProp {
   score: string;
 }
 
-interface IAnimeCard {
+interface Prop {
   anime: AnimeProp;
   index: number;
 }
 
-const AnimeCard = ({ anime }: IAnimeCard) => {
+const AnimeCard = ({ anime }: Prop) => {
   return (
     <div className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
         <Image
-          src={anime.image.original}
+          src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
           fill
           className="rounded-xl"
