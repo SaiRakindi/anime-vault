@@ -12,12 +12,12 @@ export interface AnimeProp {
   score: string;
 }
 
-interface Prop {
+interface IAnimeCard {
   anime: AnimeProp;
   index: number;
 }
 
-const AnimeCard = ({ anime }: Prop) => {
+const AnimeCard = ({ anime }: IAnimeCard) => {
   return (
     <div className="max-w-sm rounded relative w-full">
       <div className="relative w-full h-[37vh]">
